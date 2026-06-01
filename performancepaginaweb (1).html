@@ -1,0 +1,161 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Grooming - Proyecto Completo</title>
+<style>
+body{margin:0;font-family:Arial;background:#f4f6f9}
+header{background:#0d47a1;color:#fff;text-align:center;padding:25px}
+nav{background:#1565c0}
+.menu{display:flex;justify-content:center;list-style:none;margin:0;padding:0}
+.menu li{position:relative}
+.menu a{display:block;color:white;text-decoration:none;padding:15px 20px}
+.menu li:hover{background:#0d47a1}
+.submenu{display:none;position:absolute;top:100%;left:0;background:#1976d2;list-style:none;padding:0;margin:0;min-width:220px}
+.menu li:hover .submenu{display:block}
+.contenido{display:none;max-width:1000px;margin:20px auto;background:white;padding:20px;border-radius:10px;box-shadow:0 2px 8px rgba(0,0,0,.15)}
+.activo{display:block}
+img{max-width:100%;border-radius:10px;margin:10px 0}
+h2{color:#1565c0}
+</style>
+<script>
+function mostrar(id){
+document.querySelectorAll('.contenido').forEach(x=>x.classList.remove('activo'));
+document.getElementById(id).classList.add('activo');
+}
+window.onload=()=>mostrar('inicio');
+</script>
+</head>
+<body>
+
+<header>
+<h1>Performance Epoem 52 - Grooming</h1>
+<p>Información, prevención, casos reales y recursos de apoyo</p>
+</header>
+
+<nav>
+<ul class="menu">
+<li><a href="#" onclick="mostrar('inicio')">Inicio</a></li>
+
+<li><a href="#">¿Qué es?</a>
+<ul class="submenu">
+<li><a href="#" onclick="mostrar('quees')">Definición</a></li>
+<li><a href="#" onclick="mostrar('funciona')">¿Cómo funciona?</a></li>
+<li><a href="#" onclick="mostrar('alerta')">Señales de alerta</a></li>
+</ul></li>
+
+<li><a href="#">Prevención</a>
+<ul class="submenu">
+<li><a href="#" onclick="mostrar('prevencion')">Cómo prevenirlo</a></li>
+<li><a href="#" onclick="mostrar('ayuda')">¿A quién acudir?</a></li>
+</ul></li>
+
+<li><a href="#">Casos</a>
+<ul class="submenu">
+<li><a href="#" onclick="mostrar('caso1')">Caso 1</a></li>
+<li><a href="#" onclick="mostrar('caso2')">Caso 2</a></li>
+</ul></li>
+
+<li><a href="#" onclick="mostrar('integrantes')">Integrantes</a></li>
+<li><a href="#" onclick="mostrar('bibliografia')">Bibliografía</a></li>
+</ul>
+</nav>
+
+<div id="inicio" class="contenido">
+<h2>Inicio</h2>
+<img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=900">
+<p>El grooming es una problemática creciente en internet. Este proyecto busca informar y concientizar sobre los riesgos de interactuar con desconocidos en redes sociales, videojuegos y aplicaciones de mensajería.</p>
+</div>
+
+<div id="quees" class="contenido">
+<h2>¿Qué es el Grooming?</h2>
+<img src="https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=900">
+<p>El grooming es una conducta delictiva en la que una persona adulta se hace pasar por alguien de confianza para establecer una relación con un menor y manipularlo con fines de abuso o explotación.</p>
+<p>En México el grooming es considerado un delito y puede tener consecuencias legales severas.</p>
+</div>
+
+<div id="funciona" class="contenido">
+<h2>¿Cómo funciona?</h2>
+<p>Generalmente ocurre en varias etapas:</p>
+<ul>
+<li>Contacto inicial mediante redes sociales o videojuegos.</li>
+<li>Construcción de confianza.</li>
+<li>Obtención de información personal.</li>
+<li>Manipulación emocional.</li>
+<li>Extorsión o amenazas.</li>
+</ul>
+</div>
+
+<div id="alerta" class="contenido">
+<h2>Señales de alerta</h2>
+<ul>
+<li>Aislamiento social.</li>
+<li>Cambios bruscos de humor.</li>
+<li>Uso excesivo y secreto de dispositivos.</li>
+<li>Recepción de regalos inesperados.</li>
+<li>Miedo o ansiedad al revisar mensajes.</li>
+</ul>
+</div>
+
+<div id="prevencion" class="contenido">
+<h2>¿Cómo prevenirlo?</h2>
+<img src="https://images.unsplash.com/photo-1510511459019-5dda7724fd87?w=900">
+<ul>
+<li>No compartir datos personales.</li>
+<li>Configurar correctamente la privacidad.</li>
+<li>Hablar con adultos de confianza.</li>
+<li>No enviar fotografías íntimas.</li>
+<li>Bloquear y reportar perfiles sospechosos.</li>
+</ul>
+</div>
+
+<div id="ayuda" class="contenido">
+<h2>¿A quién acudir?</h2>
+<p>Si una persona es víctima de grooming puede acudir a:</p>
+<ul>
+<li>Padres o tutores.</li>
+<li>Profesores y orientadores.</li>
+<li>Psicólogos.</li>
+<li>Policía Cibernética.</li>
+<li>Fiscalías especializadas.</li>
+</ul>
+</div>
+
+<div id="caso1" class="contenido">
+<h2>Caso 1: La trampa del falso amigo</h2>
+<p>Luis, de 14 años, conoce a una persona en un videojuego que le ofrece ayuda y regalos virtuales. Con el tiempo, esa persona comienza a exigir fotografías personales y utiliza amenazas emocionales para manipularlo.</p>
+<p><b>Consecuencias:</b> ansiedad, aislamiento y bajo rendimiento escolar.</p>
+</div>
+
+<div id="caso2" class="contenido">
+<h2>Caso 2: La traición de confianza</h2>
+<p>Ana comparte una fotografía privada con su pareja. Después de terminar la relación, la imagen es difundida sin consentimiento.</p>
+<p><b>Consecuencias:</b> ataques de pánico, vergüenza y problemas sociales.</p>
+<p><b>Importante:</b> este acto puede ser sancionado por la Ley Olimpia.</p>
+</div>
+
+<div id="integrantes" class="contenido">
+<h2>Integrantes</h2>
+<ol>
+<li>Garzón Nápoles Emilio Jael</li>
+<li>Morales García Valeria</li>
+<li>Pérez Reyes Regina</li>
+<li>Tafoya Nieves Camila Abyade</li>
+<li>Trejo Martínez Alisson Esperanza</li>
+</ol>
+</div>
+
+<div id="bibliografia" class="contenido">
+<h2>Bibliografía</h2>
+<ul>
+<li>UNICEF México - Ciberseguridad.</li>
+<li>PROFECO - Grooming y Ciberacoso.</li>
+<li>UNICEF Argentina - El Grooming es un Delito.</li>
+<li>UNAM - Estudios sobre Grooming.</li>
+</ul>
+</div>
+
+</body>
+</html>
